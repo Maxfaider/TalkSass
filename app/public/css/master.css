@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main div.column-base, main div.column-big {
+  border: 1.5px solid black;
+  border-radius: 10px;
+  box-shadow: 6px 4px 4px 0 rgba(0, 0, 0, 0.2);
+  height: 480px;
+  margin: 0;
+  float: left;
+}
+main div.column-base::after, main div.column-big::after {
+  clear: both;
+}
+
+main div.column-big {
+  width: 30%;
+}
+main div.column-base {
+  width: 10%;
+}
+main div.expanse {
+  background-color: #2c3e50;
+  opacity: 0.8;
+}
+main div.expanse:nth-child(2n) {
+  background-color: #34495e;
+}
+
+/*# sourceMappingURL=master.css.map */
