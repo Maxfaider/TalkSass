@@ -3,16 +3,34 @@
 $width-medium: 30%;
 $width-small: 10%;
 
+$color-black: black;
+$color-red: red;
+
 $parent: "div";
 
+%border {
+    border: {
+        width: 1.5px;
+        style: solid
+    };
+}
+
 %column {
-    border: 1.5px solid black;
+    @extend %border;
+    border-color: $color-black;
     border-radius: 10px;
     box-shadow: 6px 4px 4px 0 rgba(0,0,0,0.2);
     height: 480px;
     margin: 0;
     float:left;
+}
+
+.row {
+    @extend %border;
+    border-color: $color-red;
     &::after {
+        display: table;
+        content: "";
         clear: both;
     }
 }

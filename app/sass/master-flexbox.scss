@@ -1,0 +1,45 @@
+@import 'base/reset';
+
+$color1: hsla(120%, 100%, 99%, 1);
+$color2: hsla(70%, 8%, 85%, 1);
+$color3: hsla(70%, 10%, 76%, 1);
+$color4: hsla(183%, 27%, 67%, 1);
+$color5: hsla(12%, 6%, 16%, 1);
+
+%border-simple {
+    border: 1px solid #141414;
+}
+
+%border-fine {
+    border: 1px solid #141414;
+    border-radius: 6px;
+}
+
+hr {
+    background-color: #141414;
+    margin-bottom: 1.5%;
+}
+
+section {
+    section.product {
+        @extend %border-simple;
+        padding: 2% 1.5% 2% 1.5%;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-color: $color2;
+        section.detail {
+            @extend %border-fine;
+            padding: .5% 1.5% .5% 1.5%;
+            margin: .5% 1% .5% 1%;
+            text-align: center;
+            width: 30%;
+            min-height: 80px;
+            overflow: hidden;
+            background-color: $color5;
+            color: $color1;
+        }
+    }
+}

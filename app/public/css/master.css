@@ -4,15 +4,26 @@
   box-sizing: border-box;
 }
 
+.row, main div.column-base, main div.column-big {
+  border-width: 1.5px;
+  border-style: solid;
+}
+
 main div.column-base, main div.column-big {
-  border: 1.5px solid black;
+  border-color: black;
   border-radius: 10px;
   box-shadow: 6px 4px 4px 0 rgba(0, 0, 0, 0.2);
   height: 480px;
   margin: 0;
   float: left;
 }
-main div.column-base::after, main div.column-big::after {
+
+.row {
+  border-color: red;
+}
+.row::after {
+  display: table;
+  content: "";
   clear: both;
 }
 

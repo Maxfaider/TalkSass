@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section section.product {
+  border: 1px solid #141414;
+}
+
+section section.product section.detail {
+  border: 1px solid #141414;
+  border-radius: 6px;
+}
+
+hr {
+  background-color: #141414;
+  margin-bottom: 1.5%;
+}
+
+section section.product {
+  padding: 2% 1.5% 2% 1.5%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #dbdcd6;
+}
+section section.product section.detail {
+  padding: 0.5% 1.5% 0.5% 1.5%;
+  margin: 0.5% 1% 0.5% 1%;
+  text-align: center;
+  width: 30%;
+  min-height: 80px;
+  overflow: hidden;
+  background-color: #2b2726;
+  color: #fafffa;
+}
+
+/*# sourceMappingURL=master-flexbox.css.map */
