@@ -1,7 +1,7 @@
-##flexbox
+## flexbox
 
-![Flexbox](flexbox.png)
+![Flexbox](flex-box.png)
 
-##floats
+## floats
 
 ![Floats](floats.png)
